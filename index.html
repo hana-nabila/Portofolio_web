@@ -1,268 +1,78 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio | Elvi Hana Nabila</title>
+    <title>AI Image Generator UI</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <a href="#" class="logo">Elvi<span>.</span></a>
-        <nav>
-            <a href="#home" class="active">Beranda</a>
-            <a href="#about">Tentang</a>
-            <a href="#services">Kompetensi</a>
-            <a href="#skills">Keterampilan</a>
-            <a href="#portfolio">Portofolio</a>
-            <a href="#contact">Kontak</a>
-        </nav>
-    </header>
-
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hai! Saya Elvi Hana Nabila</h3>
-            <h1><span>Mahasiswa Pendidikan Teknologi Informasi</span></h1>
-            <p>Saya merupakan mahasiswa Pendidikan Teknologi Informasi yang memiliki minat besar dalam pengembangan web dan media pembelajaran digital. Saya fokus dalam membuat website yang interaktif, mudah digunakan, dan memiliki tampilan yang menarik untuk mendukung proses pembelajaran modern. Saat ini saya terus mengembangkan kemampuan di bidang pemrograman, desain UI/UX, serta teknologi pendidikan.</p>
-            
-            <div class="social-media">
-                <a href="https://www.instagram.com/vnabila22/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@lvii_nbl" target="_blank"><i class="fab fa-tiktok"></i></a>
-                <a href="https://github.com/hana-nabila" target="_blank"><i class="fab fa-github"></i></a>
+    <div class="container">
+        <div class="card" id="generatorCard">
+            <div class="header">
+                <div class="logo-section">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h1>AI Image Generator</h1>
+                </div>
+                <button class="theme-toggle" id="themeBtn">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
             </div>
 
-            <div class="home-btns">
-                <a href="CV.pdf" download class="btn">Unduh CV</a>
-                <a href="#contact" class="btn">Hubungi Saya</a>
-            </div>
-        </div>
-
-        <div class="home-img">
-            <img src="IMG/man3.png.png" alt="Elvi">
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="IMG/about-me-pic2.png.png" alt="Tentang Saya">
-        </div>
-        <div class="about-content">
-            <h2 class="heading">Tentang <span>Saya</span></h2>
-            <h3>Cerita Singkat</h3>
-            <p>Halo! Saya Elvi Hana Nabila, mahasiswa Pendidikan Teknologi Informasi yang bersemangat menciptakan solusi digital untuk pendidikan. Saya fokus pada pengembangan web, desain UI/UX, dan media pembelajaran yang mudah dipahami oleh pengguna.</p>
-            <p>Saya percaya teknologi dapat membuat proses belajar menjadi lebih menarik, efektif, dan inklusif bagi semua kalangan. Dengan kombinasi kreativitas dan pemahaman pedagogi, saya terus mengembangkan hasil kerja yang berdampak positif.</p>
-            <a href="#about-detail" id="about-detail-btn" class="btn">Baca Selengkapnya!</a>
-        </div>
-    </section>
-
-    <section id="about-detail" class="about-detail">
-        <h2>Tentang Saya Lebih Detail</h2>
-        <p>Saya merupakan mahasiswa Pendidikan Teknologi Informasi yang memiliki minat, komitmen, dan dedikasi tinggi dalam bidang pengembangan teknologi, khususnya pada pembuatan website serta media pembelajaran berbasis digital. Saya meyakini bahwa pemanfaatan teknologi secara tepat dapat menjadi kunci dalam meningkatkan kualitas dan efektivitas pembelajaran di era modern.</p>
-        <p>Dalam proses pengembangan diri, saya aktif mempelajari dan mengasah keterampilan di bidang pemrograman web, meliputi HTML, CSS, dan JavaScript. Selain itu, saya juga memahami prinsip dasar desain antarmuka dan pengalaman pengguna (UI/UX) guna menciptakan tampilan yang tidak hanya menarik secara visual, tetapi juga intuitif dan mudah digunakan.</p>
-        <p>Saya memiliki ketertarikan khusus dalam mengembangkan media pembelajaran interaktif yang mampu meningkatkan keterlibatan dan pemahaman pengguna. Bagi saya, sebuah media pembelajaran yang baik tidak hanya menyampaikan informasi, tetapi juga mampu memberikan pengalaman belajar yang bermakna.</p>
-        <p>Di samping kemampuan teknis, saya juga memiliki kemampuan berpikir kritis, analitis, serta problem solving yang baik. Saya mampu bekerja secara mandiri maupun dalam tim, serta memiliki semangat belajar yang tinggi untuk terus beradaptasi dengan perkembangan teknologi yang dinamis.</p>
-        <p>Tujuan utama saya adalah menjadi seorang pendidik profesional yang mampu mengintegrasikan teknologi secara efektif dalam proses pembelajaran, sehingga tercipta pengalaman belajar yang inovatif, interaktif, dan menyenangkan bagi peserta didik.</p>
-        <p>Ke depannya, saya berkomitmen untuk terus mengembangkan kompetensi di bidang teknologi pendidikan serta berkontribusi dalam menciptakan solusi digital yang berdampak positif bagi dunia pendidikan.</p>
-    </section>
-
-    <section class="services" id="services">
-        <h2 class="heading">Kompetensi <span>Saya</span></h2>
-        <div class="services-container">
-            <div class="services-box">
-                <i class="fas fa-code"></i>
-                <h3>Pengembangan Web</h3>
-                <p>Membangun website yang responsif dan interaktif menggunakan teknologi web modern.</p>
-                <a href="#" class="btn service-toggle">Selengkapnya</a>
-                <div class="service-detail">
-                    <h3>Pengembangan Web</h3>
-                    <p>Saya berfokus pada pengembangan website modern yang tidak hanya responsif dan interaktif, tetapi juga dirancang dengan standar kualitas tinggi dalam hal performa, struktur, dan skalabilitas. Dengan memanfaatkan teknologi seperti HTML, CSS, dan JavaScript, saya membangun solusi web yang mampu berjalan optimal di berbagai perangkat dan kondisi pengguna.</p>
-                    <p>Dalam setiap proyek, saya mengedepankan clean code, efisiensi, serta maintainability agar sistem yang dibangun mudah dikembangkan di masa depan. Selain aspek teknis, saya juga memperhatikan keseimbangan antara estetika visual dan fungsionalitas, sehingga menghasilkan website yang tidak hanya menarik secara tampilan, tetapi juga memberikan pengalaman pengguna yang seamless, intuitif, dan berorientasi pada kebutuhan pengguna.</p>
-                    <p>Saya percaya bahwa sebuah website yang baik bukan hanya sekadar berfungsi, tetapi mampu memberikan nilai, identitas, serta pengalaman yang berkesan bagi setiap penggunanya.</p>
+            <div class="input-group">
+                <textarea placeholder="Describe your imagination in detail..."></textarea>
+                <div class="dice-icon">
+                    <i class="fa-solid fa-dice-five"></i>
                 </div>
             </div>
-            <div class="services-box">
-                <i class="fas fa-paint-brush"></i>
-                <h3>Desain UI/UX</h3>
-                <p>Merancang antarmuka pengguna yang menarik dan ramah pengguna menggunakan Figma.</p>
-                <a href="#" class="btn service-toggle">Selengkapnya</a>
-                <div class="service-detail">
-                    <h3>Desain UI/UX</h3>
-                    <p>Saya merancang pengalaman digital dengan pendekatan strategis yang menggabungkan estetika visual dan pemahaman mendalam terhadap perilaku pengguna. Dalam proses desain UI/UX, saya mengutamakan prinsip user-centered design untuk memastikan setiap elemen yang dibuat memiliki tujuan yang jelas dan memberikan kemudahan bagi pengguna.</p>
-                    <p>Proses kerja saya mencakup tahapan eksplorasi ide, pembuatan wireframe, hingga pengembangan prototype interaktif menggunakan tools seperti Figma. Saya juga memperhatikan detail seperti hierarchy visual, konsistensi desain, serta alur navigasi yang logis agar pengguna dapat berinteraksi dengan sistem secara natural dan efisien.</p>
-                    <p>Tujuan utama saya adalah menciptakan desain yang tidak hanya terlihat menarik, tetapi juga mampu meningkatkan kualitas interaksi, memperkuat identitas produk, dan memberikan pengalaman pengguna yang optimal secara menyeluruh.</p>
+
+            <div class="controls">
+                <div class="select-wrapper">
+                    <select id="model">
+                        <option value="" disabled selected>Select Model</option>
+                        <option value="FLUX.1-dev">FLUX.1-dev</option>
+                        <option value="FLUX.1-schnell">FLUX.1-schnell</option>
+                        <option value="Stable Diffusion XL">Stable Diffusion XL</option>
+                        <option value="Stable Diffusion 1.5">Stable Diffusion 1.5</option>
+                        <option value="Stable Diffusion 3">Stable Diffusion 3</option>
+                        <option value="Openjourney">Openjourney</option>
+                    </select>
                 </div>
+
+                <div class="select-wrapper">
+                    <select id="imageCount">
+                        <option value="" disabled selected>Image Count</option>
+                        <option value="1">1 Image</option>
+                        <option value="2">2 Images</option>
+                        <option value="3">3 Images</option>
+                        <option value="4">4 Images</option>
+                    </select>
+                </div>
+
+                <div class="select-wrapper">
+                    <select id="aspectRatio">
+                        <option value="" disabled selected>Aspect Ratio</option>
+                        <option value="1:1">Square (1:1)</option>
+                        <option value="16:9">Landscape (16:9)</option>
+                        <option value="9:16">Portrait (9:16)</option>
+                    </select>
+                </div>
+
+                <button class="generate-btn">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Generate
+                </button>
             </div>
-            <div class="services-box">
-                <i class="fas fa-graduation-cap"></i>
-                <h3>Media Pembelajaran</h3>
-                <p>Mengembangkan media pembelajaran digital inovatif untuk transformasi pendidikan.</p>
-                <a href="#" class="btn service-toggle">Selengkapnya</a>
-                <div class="service-detail">
-                    <h3>Media Pembelajaran</h3>
-                    <p>Saya mengembangkan media pembelajaran digital yang inovatif dengan mengintegrasikan teknologi, desain, dan prinsip pedagogi modern. Fokus utama saya adalah menciptakan pengalaman belajar yang tidak hanya informatif, tetapi juga interaktif, menarik, dan mampu meningkatkan keterlibatan pengguna secara aktif.</p>
-                    <p>Dalam proses pengembangan, saya merancang konten yang terstruktur, mudah dipahami, serta disesuaikan dengan kebutuhan pengguna. Saya juga mengintegrasikan elemen interaktif untuk mendorong partisipasi, meningkatkan motivasi belajar, serta membantu pengguna dalam memahami konsep secara lebih mendalam.</p>
-                    <p>Saya meyakini bahwa media pembelajaran yang efektif bukan hanya menyampaikan materi, tetapi juga mampu menciptakan pengalaman belajar yang bermakna, menyenangkan, dan berdampak jangka panjang bagi penggunanya.</p>
-                </div>
+
+            <div class="results" id="resultArea">
+                <p class="no-result">No images generated yet. Use the Generate button.</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="skills" id="skills">
-        <h2 class="heading">Keahlian <span>Saya</span></h2>
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Keahlian Teknis</h3>
-                <div class="skills-box">
-                    <div class="progress"><h3>HTML <span>72%</span></h3><div class="bar"><span style="width: 72%;"></span></div></div>
-                    <div class="progress"><h3>Figma <span>90%</span></h3><div class="bar"><span style="width: 90%;"></span></div></div>
-                    <div class="progress"><h3>JavaScript <span>80%</span></h3><div class="bar"><span style="width: 80%;"></span></div></div>
-                    <div class="progress"><h3>CSS <span>62%</span></h3><div class="bar"><span style="width: 62%;"></span></div></div>
-                </div>
-            </div>
-            <div class="skills-column">
-                <h3 class="title">Keahlian Profesional</h3>
-                <div class="skills-grid">
-                    <div class="circle-skill"><span>90%</span><p>Kerja Tim</p></div>
-                    <div class="circle-skill"><span>80%</span><p>Kreativitas</p></div>
-                    <div class="circle-skill"><span>55%</span><p>Manajemen Proyek</p></div>
-                    <div class="circle-skill"><span>70%</span><p>Komunikasi</p></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Proyek <span>Terbaru</span></h2>
-        <div class="portfolio-grid">
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="Praktikum6/Blackpink.jpg" alt="Praktikum 6">
-                </div>
-                <div class="project-content">
-                    <span class="project-type">Praktikum Web</span>
-                    <h3>Praktikum 6</h3>
-                    <p>Halaman fan page BlackPink dengan tampilan hero dan navigasi yang menarik, ditampilkan sebagai contoh proyek praktikum.</p>
-                    <div class="project-actions">
-                        <a href="Praktikum6/index.html" target="_blank" class="text-link">Live Demo</a>
-                        <a href="#" class="btn project-detail-btn">Details</a>
-                    </div>
-                    <div class="project-detail">
-                        <h4>Tentang Proyek</h4>
-                        <p>Halaman praktikum 6 adalah fan page BlackPink dengan layout hero yang berani, navigasi menu, dan tampilan galeri member. Proyek ini menonjolkan desain warna pink dan hitam serta efek visual yang sesuai dengan tema fan page.</p>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="IMG/1.jpg.png" alt="Catatan Notes App">
-                </div>
-                <div class="project-content">
-                    <span class="project-type">Web Application</span>
-                    <h3>Catatan Notes App</h3>
-                    <p>Aplikasi web untuk membuat, menyimpan, dan mengelola catatan digital dengan antarmuka yang intuitif dan responsif.</p>
-                    <div class="project-actions">
-                        <a href="catatan (Notes App)/index.html" target="_blank" class="text-link">Live Demo</a>
-                        <a href="#" class="btn project-detail-btn">Details</a>
-                    </div>
-                    <div class="project-detail">
-                        <h4>Tentang Proyek</h4>
-                        <p>Catatan Notes App adalah aplikasi web sederhana namun powerful untuk menciptakan, menyimpan, dan mengelola catatan digital. Dilengkapi dengan fitur tambah catatan, edit, hapus, dan penyimpanan lokal, membuat aplikasi ini praktis untuk penggunaan sehari-hari.</p>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="IMG/2.jpg.png" alt="QR Code Generator">
-                </div>
-                <div class="project-content">
-                    <span class="project-type">Utility Tool</span>
-                    <h3>QR Code Generator</h3>
-                    <p>Aplikasi untuk menghasilkan kode QR dari teks atau URL dengan mudah, lengkap dengan opsi download dan kustomisasi warna.</p>
-                    <div class="project-actions">
-                        <a href="QR Code Generator/index.html" target="_blank" class="text-link">Live Demo</a>
-                        <a href="#" class="btn project-detail-btn">Details</a>
-                    </div>
-                    <div class="project-detail">
-                        <h4>Tentang Proyek</h4>
-                        <p>QR Code Generator adalah aplikasi web yang memudahkan pengguna untuk membuat dan mengunduh kode QR. Dengan interface yang user-friendly dan fitur kustomisasi, pengguna dapat dengan cepat menghasilkan QR code untuk link, teks, atau informasi kontak mereka.</p>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="IMG/3.jpg.png" alt="Aplikasi Cuaca">
-                </div>
-                <div class="project-content">
-                    <span class="project-type">Weather App</span>
-                    <h3>Aplikasi Cuaca</h3>
-                    <p>Aplikasi web untuk melihat informasi cuaca real-time dan ramalan cuaca harian berdasarkan lokasi pengguna.</p>
-                    <div class="project-actions">
-                        <a href="Aplikasi Cuaca/index.html" target="_blank" class="text-link">Live Demo</a>
-                        <a href="#" class="btn project-detail-btn">Details</a>
-                    </div>
-                    <div class="project-detail">
-                        <h4>Tentang Proyek</h4>
-                        <p>Aplikasi Cuaca adalah aplikasi web yang memberikan informasi cuaca terkini dan ramalan cuaca untuk beberapa hari ke depan. Menggunakan API cuaca untuk data akurat, aplikasi ini menampilkan suhu, kelembaban, kecepatan angin, dan kondisi cuaca dengan interface yang bersih dan responsif.</p>
-                    </div>
-                    </div>
-            </article>
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="IMG/5.jpg.png" alt="AI Image Generator">
-                </div>
-                <div class="project-content">
-                    <span class="project-type">Game</span>
-                    <h3>Snake Game</h3>
-                    <p>Permainan arkade klasik yang dikembangkan menggunakan HTML5 Canvas dan JavaScript, menghadirkan kembali pengalaman nostalgia dengan sentuhan modern yang responsif.</p>
-                    <div class="project-actions">
-                        <a href="Snake/index.html" target="_blank" class="text-link">Live Demo</a>
-                        <a href="#" class="btn project-detail-btn">Details</a>
-                    </div>
-                    <div class="project-detail">
-                        <h4>Tentang Proyek</h4>
-                        <p>Permainan Snake adalah aplikasi berbasis web yang menguji ketangkasan pengguna dalam mengendalikan ular untuk mengumpulkan poin. Menggunakan logika pemrograman JavaScript yang efisien, aplikasi ini mencakup sistem skor real-time, deteksi tabrakan yang presisi, dan tingkat kesulitan yang dinamis. Dibangun dengan antarmuka yang minimalis namun tetap memberikan pengalaman bermain yang mulus di berbagai perangkat.</p>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="IMG/4.jpg.png" alt="AI Image Generator">
-                </div>
-                <div class="project-content">
-                    <span class="project-type">AI Tool</span>
-                    <h3>AI Image Generator</h3>
-                    <p>Aplikasi web untuk membuat gambar berbasis teks menggunakan teknologi AI dengan antarmuka yang mudah digunakan.</p>
-                    <div class="project-actions">
-                        <a href="AI Image Generator/index.html" target="_blank" class="text-link">Live Demo</a>
-                        <a href="#" class="btn project-detail-btn">Details</a>
-                    </div>
-                    <div class="project-detail">
-                        <h4>Tentang Proyek</h4>
-                        <p>AI Image Generator adalah tool berbasis web yang memungkinkan pengguna membuat gambar dari prompt teks. Proyek ini menampilkan fitur pembuatan gambar otomatis, preview hasil, dan opsi pengunduhan untuk setiap karya AI yang dibuat.</p>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Kontak <span>Saya</span></h2>
-        <form action="https://wa.me/6285755164950" target="_blank">
-            <div class="input-box">
-                <input type="text" placeholder="Nama Anda" required>
-                <input type="email" placeholder="Email Anda" required>
-            </div>
-            <div class="input-box">
-                <input type="text" placeholder="Alamat Anda">
-                <input type="number" placeholder="Nomor Telepon">
-            </div>
-            <textarea cols="30" rows="10" placeholder="Pesan Anda"></textarea>
-            <input type="submit" value="Kirim Pesan" class="btn">
-        </form>
-    </section>
-
-    <script src="script.js"></script>
+    <script src="javascript.js"></script>
 </body>
 </html>
